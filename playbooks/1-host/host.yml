@@ -10,7 +10,7 @@
     - ../../roles/utils # ok
     - ../../roles/kvm # ok
     - ../../roles/ansible # ok
-    - ../../roles/vagrant # ok
+    - ../roles/vagrant # ok
 
   vars_files:
     - ../../vars/main.yml
