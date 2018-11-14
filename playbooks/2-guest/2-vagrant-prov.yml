@@ -1,0 +1,11 @@
+---
+- name: VM Provisioning
+  hosts: all
+  become: yes
+  
+  roles:
+    - post-install # ok
+    - guest-network # ok
+
+  vars_files:
+    - /etc/ansible/vars/main.yml

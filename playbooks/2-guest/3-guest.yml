@@ -1,0 +1,14 @@
+---
+- name: VM Provisioning
+  hosts: new_vms
+  strategy: free
+  
+  roles:
+    - repos # ok
+    - utils # ok
+    - docker # ok
+    - ipsec-prereqs # ok
+    - kubernetes/prepare_nodes # ok
+
+  vars_files:
+    - /etc/ansible/vars/main.yml

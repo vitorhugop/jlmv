@@ -1,0 +1,9 @@
+---
+- name: Deploy do cluster
+  hosts: new_vms:active_master
+
+  roles:
+    - kubernetes/deploy_cluster
+    
+  vars_files:
+    - /etc/ansible/vars/main.yml

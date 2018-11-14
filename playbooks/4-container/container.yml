@@ -1,0 +1,11 @@
+---
+- name: Deploying Service
+  hosts: active_vms
+  become: yes
+  
+  roles:
+    - kubernetes/deploy_service
+
+  vars_files:
+    - /etc/ansible/vars/main.yml
+    - /etc/ansible/vars/service.yml
