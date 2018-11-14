@@ -4,13 +4,13 @@
   strategy: free
 
   roles:
-    - name # ok
-    - post-install # ok
-    - repos # ok
-    - utils # ok
-    - kvm # ok
-    - ansible # ok
-    - vagrant # ok
+    - ../../roles/name # ok
+    - ../../roles/post-install # ok
+    - ../../roles/repos # ok
+    - ../../roles/utils # ok
+    - ../../roles/kvm # ok
+    - ../../roles/ansible # ok
+    - ../../roles/vagrant # ok
 
   vars_files:
     - ../../vars/main.yml
