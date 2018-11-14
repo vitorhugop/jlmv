@@ -36,9 +36,9 @@ spec:
                         volumes:
                         - name: {{ ipsec_name }}-conf
                           hostPath:
-                                path: /kubernetes/ipsec/{{ ipsec_name }}/ipsec.d/{{ ipsec_name }}.conf
+                                path: /kubernetes/ipsec/{{ ipsec_name }}.conf
                                 type: File
                         - name: {{ ipsec_name }}-secrets
                           hostPath:
-                                path: /kubernetes/ipsec/{{ ipsec_name }}/ipsec.d/{{ ipsec_name }}.secrets
+                                path: /kubernetes/ipsec/{{ ipsec_name }}.secrets
                                 type: File

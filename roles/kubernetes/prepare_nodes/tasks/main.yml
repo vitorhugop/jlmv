@@ -100,3 +100,8 @@
   file:
     path: /opt/cni/bin/static
     mode: u+x
+
+- name: Copiando arquivos do IPSEC
+  copy:
+    src: "{{ provisioning_path }}files/ipsec/"
+    dest: "/kubernetes/ipsec/"

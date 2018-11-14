@@ -59,7 +59,7 @@
 
 - name: Adicionando Forwarding IPv6
   copy:
-    src: /etc/ansible/roles/post-install/files/ipv6.conf
+    src: ../files/ipv6.conf
     dest: /etc/sysctl.d/ipv6.conf
 
 - name: Aplicando parâmetros do sysctl

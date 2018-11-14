@@ -4,17 +4,17 @@
     path: "{{ item }}"
     state: directory
   with_items:
-     - /kubernetes/ipsec/{{ ipsec_name }}/ipsec.d
+     - /kubernetes/ipsec
 
 - name: Copiando ipsec.conf
   copy:
-    src: /etc/ansible/roles/kubernetes/deploy_service/files/ipsec.conf
-    dest: /kubernetes/ipsec/{{ ipsec_name }}/ipsec.d/{{ ipsec_name }}.conf
+    src: {{ provisioning_path }}files/ipsec/{{ ipsec_name }}.conf
+    dest: /kubernetes/ipsec/{{ ipsec_name }}.conf
 
 - name: Copiando ipsec.secrets
   copy:
-    src: /etc/ansible/roles/kubernetes/deploy_service/files/ipsec.secrets
-    dest: /kubernetes/ipsec/{{ ipsec_name }}/ipsec.d/{{ ipsec_name }}.secrets
+    src: {{ provisioning_path }}files/ipsec/{{ ipsec_name }}.secrets
+    dest: /kubernetes/ipsec/{{ ipsec_name }}.secrets
 
 ## Executa em todos os Master's
 

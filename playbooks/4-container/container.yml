@@ -7,5 +7,5 @@
     - kubernetes/deploy_service
 
   vars_files:
-    - /etc/ansible/vars/main.yml
-    - /etc/ansible/vars/service.yml
+    - ../vars/main.yml
+    - ../vars/service.yml

@@ -38,7 +38,7 @@
 
 - name: Criar rede padrão Flannel
   copy:
-    src: /etc/ansible/roles/kubernetes/deploy_cluster/files/flannel-net01.conf
+    src: ../files/flannel-net01.conf
     dest: /kubernetes/networks/files/flannel-net01.conf
 
 - name: Criar rede padrão Flannel

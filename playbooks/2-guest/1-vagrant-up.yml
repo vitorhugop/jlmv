@@ -11,4 +11,4 @@
       # vagrant provisioning - chama guest.yml através do vagrant
 
   vars_files: 
-    - /etc/ansible/vars/main.yml
+    - ../../vars/main.yml

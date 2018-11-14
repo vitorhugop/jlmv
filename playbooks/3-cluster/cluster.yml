@@ -6,4 +6,4 @@
     - kubernetes/deploy_cluster
     
   vars_files:
-    - /etc/ansible/vars/main.yml
+    - ../vars/main.yml
