@@ -4,8 +4,8 @@
   become: yes
   
   roles:
-    - kubernetes/deploy_service
+    - ../../roles/kubernetes/deploy_service
 
   vars_files:
-    - ../vars/main.yml
-    - ../vars/service.yml
+    - ../../vars/main.yml
+    - ../../vars/service.yml

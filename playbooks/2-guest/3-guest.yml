@@ -4,11 +4,11 @@
   strategy: free
   
   roles:
-    - repos # ok
-    - utils # ok
-    - docker # ok
-    - ipsec-prereqs # ok
-    - kubernetes/prepare_nodes # ok
+    - ../../roles/repos # ok
+    - ../../roles/utils # ok
+    - ../../roles/docker # ok
+    - ../../roles/ipsec-prereqs # ok
+    - ../../roles/kubernetes/prepare_nodes # ok
 
   vars_files:
-    - ../vars/main.yml
+    - ../../vars/main.yml

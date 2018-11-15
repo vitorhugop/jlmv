@@ -3,7 +3,7 @@
   hosts: new_vms:active_master
 
   roles:
-    - kubernetes/deploy_cluster
+    - ../../roles/kubernetes/deploy_cluster
     
   vars_files:
-    - ../vars/main.yml
+    - ../../vars/main.yml

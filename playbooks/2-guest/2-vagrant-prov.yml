@@ -4,8 +4,8 @@
   become: yes
   
   roles:
-    - post-install # ok
-    - guest-network # ok
+    - ../../roles/post-install # ok
+    - ../../roles/guest-network # ok
 
   vars_files:
     - /etc/ansible/vars/main.yml

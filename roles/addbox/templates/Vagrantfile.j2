@@ -6,16 +6,19 @@ Vagrant.configure("2") do |config|
     config_{{ shortname }}.vm.hostname = "{{ hostname }}"
     config_{{ shortname }}.vm.network :public_network,
       :dev => "{{ mgmt_bridge_iface }}",
+      :type => "bridge",
       :libvirt__iface_name => "{{ mgmt_iface_name }}",
       :mac => "{{ hostvars[groups['new_vms'][my_idx]]['mgmt_mac'] }}",
       :auto_config => false
     config_{{ shortname }}.vm.network :public_network,
       :dev => "{{ wan_bridge_iface }}",
+      :type => "bridge",
       :libvirt__iface_name => "{{ wan_iface_name }}",
       :mac => "{{ hostvars[groups['new_vms'][my_idx]]['wan_mac'] }}",
       :auto_config => false
     config_{{ shortname }}.vm.network :public_network,
       :dev => "{{ lan_bridge_iface }}",
+      :type => "bridge",
       :libvirt__iface_name => "{{ lan_iface_name }}",
       :mac => "{{ hostvars[groups['new_vms'][my_idx]]['lan_mac'] }}",
       :auto_config => false
